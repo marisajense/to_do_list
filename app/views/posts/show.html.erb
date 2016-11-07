@@ -1,0 +1,13 @@
+<h1> <%= @post.name %> </h1>
+<hr />
+
+
+<blockquote>
+  <%= @post.description %>
+</blockquote>
+
+<h6>
+  Is Completed: <%= @post.complete ? 'Yes' : 'No' %>
+</h6>
+
+<%= link_to 'Back', posts_path %>  <!--- or :back -->
